@@ -16,7 +16,7 @@ class Tree {
   ~Tree() = default;
 
   auto operator=(const Tree& other) -> Tree&;
-  auto operator=(Tree&&) -> Tree& = default;
+  auto operator=(Tree&&) noexcept -> Tree& = default;
   auto operator=(std::initializer_list<T> list) -> Tree&;
   auto operator==(const Tree& other) const -> bool;
   auto operator!=(const Tree& other) const -> bool;

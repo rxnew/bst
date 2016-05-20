@@ -37,7 +37,6 @@ class Tree {
   class Impl;
   std::unique_ptr<Impl> impl;
 };
-
 }
 
 #include "bst_impl.hpp"
